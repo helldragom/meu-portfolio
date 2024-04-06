@@ -8,7 +8,7 @@ body {
 		sans-serif;
 	margin: 0 auto;
 	max-width: 1120px;
-	background: linear-gradient(150deg, #000000, #144fa8);
+	background: linear-gradient(to right, #06021a,#0e76a8,#0b4d63,#06021a);
   background-size: 120% 120%;
 }
 
@@ -23,7 +23,7 @@ body {
 	width: 65px;
 	height: 65px;
 	border-radius: 50%;
-	border: 2px solid #fff;
+	border: 2px solid #ffffff;
 	text-decoration: underline;
 	text-align: center;
 	line-height: 55px;
@@ -34,8 +34,9 @@ body {
 }
 
 .cabecalho a:hover .logo {
-	color: #9443d8;
-	border: 2px solid #9443d8;
+	background: linear-gradient(to right, #1d0c7c, #000000, #2ca7cc);
+	border: 2px solid #ffffff;
+	
 
 }
 
@@ -47,7 +48,7 @@ body {
 }
 
 .cabecalho .menu li a:hover {
-	background-color: #9443d8;
+	background: linear-gradient(to right, #1d0c7c, #626781, #2ca7cc);
 	color: #fff;
 	border-radius: 50px;
 
@@ -74,6 +75,8 @@ body {
 		sans-serif;
 	font-size: 45px;
 	margin-bottom: 20px;
+	animation-name: animacao;
+	animation-duration: 6s;
 }
 
 .home .informacoes p {
@@ -100,12 +103,34 @@ body {
 	transition: 0.3s;
 }
 
-.home .redes-sociais a i:hover {
+.fa-linkedin-in:hover {
 
-	color: #9443d8;
-	border: 1px solid #9443d8;
+	background: linear-gradient(45deg, #0e76a8, #1c9fdb, #47a8d4, #80c5e6);
+	border: 1px solid #ffffff;
 	transform: scale(1.1);
 }
+
+.fa-whatsapp:hover {
+
+	background: linear-gradient(45deg, #07421b, #107529, #47b61cbe, #4dbb56);
+	border: 1px solid #ffffff;
+	transform: scale(1.1);
+}
+
+.fa-github:hover {
+
+	background: linear-gradient(45deg, #171515, #353030, #504949, #171515);
+	border: 1px solid #ffffff;
+	transform: scale(1.1);
+}
+
+.fa-instagram:hover {
+
+	background: linear-gradient(45deg, #1c0f8f, #a233b1, #ff0a02be, #fce309);
+	border: 1px solid #ffffff;
+	transform: scale(1.1);
+}
+
 
 .home .container-foto .foto {
 	max-width: 450;
@@ -204,13 +229,27 @@ body {
 }
 
 .projetos .btn-mostrar-projetos:hover {
-	background-color: #9443d8;
-	transition: 0.3s;
+	background-color: #120c64;
+	width: 400px;
+	transition: 1.5s;
 }
 
 .projetos .btn-mostrar-projetos.remover {
 	display: none;
 }
+
+@keyframes animacao {
+	from {background-color: rgb(#1d0c7c);width:500px;}
+	to {background-color: rgb(#626781);width:200px;}
+	
+
+}
+
+
+
+
+
+
 
 @keyframes gradient-animation {
 	0% {
