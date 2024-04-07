@@ -1,6 +1,6 @@
 html {
-	color: #fff;
-	scroll-behavior:smooth !important;
+	color: #a9e3f5;
+	scroll-behavior:smooth;
 }
 
 body {
@@ -152,6 +152,7 @@ body {
 .projetos {
     scroll-behavior: smooth;
 	padding: 70px 0 70px;
+	
 }
 
 .projetos .titulo {
@@ -160,6 +161,7 @@ body {
 	font-size: 45px;
 	font-weight: 500;
 	text-transform: uppercase;
+	
 }
 
 .projetos .container-projetos {
@@ -168,6 +170,7 @@ body {
 	flex-wrap: wrap;
 	margin-bottom: 20px;
 	justify-content: center;
+	
 }
 
 .projetos .projeto {
@@ -175,28 +178,33 @@ body {
 	max-height: 500px;
 	position: relative;
 	display: none;
+	
 }
 
 .projetos .projeto.ativo {
+	border-radius: 2%;
 	display: block;
 }
 
 .projetos .projeto img {
 	height: 100%;
+	border-radius: 2%;
+	
 }
 
 .projetos .projeto h3 {
-	background-color: #040203;
+	background: linear-gradient(to right, #000000,#150761, #626781, #2ca7cc,#000000);
 	width: 100%;
 	padding-left: 20px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 	position: absolute;
 	bottom: 0;
+	border-radius: 2%;
 }
 
 .projetos .projeto .informacoes-projeto {
-	background-color: #040203;
+	background: linear-gradient(to right, #000000,#150761,#000000);
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -205,6 +213,7 @@ body {
 	opacity: 0;
 	transition: 0.3s;
 	padding: 20px;
+	border-radius: 2%;
 }
 
 .projetos .container-projetos .projeto:hover .informacoes-projeto {
